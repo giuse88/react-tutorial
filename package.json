@@ -4,18 +4,19 @@
   "description": "Code from the React tutorial.",
   "main": "app/main.js",
   "browserify": {
-  "transform": [
+    "transform": [
       "envify",
       "babelify"
     ]
   },
   "scripts": {
-    "start": "grunt"
+    "start": "grunt app"
   },
   "dependencies": {
     "body-parser": "^1.4.3",
     "express": "^4.4.5",
-    "react": "^0.13.1"
+    "react": "^0.13.1",
+    "showdown": "git://github.com/showdownjs/showdown.git#showdown2"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
