@@ -1,7 +1,6 @@
 {
-  "name": "react-tutorial",
+  "name": "react-template",
   "version": "0.0.1",
-  "description": "Code from the React tutorial.",
   "main": "app/main.js",
   "browserify": {
   "transform": [
@@ -10,7 +9,7 @@
     ]
   },
   "scripts": {
-    "start": "grunt"
+    "start": "grunt app"
   },
   "dependencies": {
     "body-parser": "^1.4.3",
@@ -44,7 +43,6 @@
     "comment",
     "example"
   ],
-  "homepage": "https://github.com/reactjs/react-tutorial",
   "engines": {
     "node": "0.12.x"
   }
