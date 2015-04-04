@@ -21,7 +21,13 @@ var CommentBox = React.createClass({
       }.bind(this)
     });
   },
+  addCommentLocally: function (comment) {
+    var comments = this.state.comments;
+    var newComments = comments.concat([comment]);
+    this.setState({comments: newComments});
+  },
   handleCommentSubmit: function (comment) {
+    this.addCommentLocally(comment);
     $.ajax({
       url: this.props.url,
       dataType: "json",
