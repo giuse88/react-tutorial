@@ -7,6 +7,9 @@ SRC = $(shell find ./app ./Gruntfile.js  -type f -name '*.js')
 start:
 	@npm start
 
+server: 
+	@node server/server
+
 lint:
 	@$(BIN)/jscs $(SRC);
 	@$(BIN)/jsxhint $(SRC);
