@@ -1,10 +1,14 @@
 var React = require("react");
+var CommentList = require("./CommentList");
+var CommentForm = require("./CommentForm");
 
 var CommentBox = React.createClass({
   render: function() {
     return (
       <div className="commentBox">
-        Hello, world! I am react Component.
+        <h1> Comments </h1>
+        <CommentList />
+        <CommentForm />
       </div>
     );
   }
