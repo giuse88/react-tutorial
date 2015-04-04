@@ -1,7 +1,15 @@
 [
     {
-        "id" : "1",
+        "id": "1",
         "author": "Pete Hunt",
         "text": "Hey there!"
+    },
+    {
+        "author": "test",
+        "text": "teset"
+    },
+    {
+        "author": "Giuseppe",
+        "text": "React is awesome"
     }
 ]

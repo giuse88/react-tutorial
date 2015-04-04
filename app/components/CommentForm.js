@@ -21,7 +21,7 @@ var CommentForm = React.createClass({
   handleSubmit: function (e) {
     e.preventDefault();
     if (this.isValidComment()) {
-      // TODO send to server
+      this.props.onCommentSubmit(this.getInputComment());
       this.resetForm();
     }
   },
