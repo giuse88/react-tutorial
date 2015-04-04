@@ -3,12 +3,15 @@ var Comment = require("./Comment");
 
 var CommentList = React.createClass({
   render: function() {
+    var comments = this.props.comments
+      .map((comment) => <Comment key={comment.id} author={comment.author} text={comment.text} />);
+
     return (
       <div className="commentList">
-        <Comment author="Pete Hunt">This is one comment</Comment>
-        <Comment author="Jordan Walke">This is *another* comment</Comment>
+        { comments }
       </div>
     );
+
   }
 });
 
